@@ -28,6 +28,11 @@
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percentage",
+						"type": "uint256"
 					}
 				],
 				"name": "addInheritor",
@@ -61,6 +66,11 @@
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "percentage",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -114,6 +124,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "totalPercentage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "viewInheritors",
 				"outputs": [
 					{
@@ -127,11 +150,16 @@
 								"internalType": "string",
 								"name": "name",
 								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "percentage",
+								"type": "uint256"
 							}
 						],
-						"internalType": "struct Inheritance.Inheritor[]",
+						"internalType": "struct Inheritance.Inheritor[4]",
 						"name": "",
-						"type": "tuple[]"
+						"type": "tuple[4]"
 					}
 				],
 				"stateMutability": "view",
@@ -179,11 +207,11 @@
 	},
 	"sources": {
 		"project.sol": {
-			"keccak256": "0xe25fa554334411bc33b2b4b547159decb313ed5df6c1f5046ff9d6364ecf76b6",
+			"keccak256": "0xcc7f28a1451400aad72152219f21309a0682b6ddf0b2d157629bbad96434f98f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://45cd5cdb3ade7236181b12655c379808f061d48ba66243f80342b8f7842f331e",
-				"dweb:/ipfs/QmSEPY9zKsGfedWy37Y39MAEt6Yfvv3gWk8BnXhLN9JwbA"
+				"bzz-raw://c3bc6dcc0880a2a860a88ed29acf28bf337308ad4483cb4f9ce3926fbc486d44",
+				"dweb:/ipfs/QmQQZpdvzWf7ty9t8MTJXMYYssAPeDtE3eAmyBoZEGNih3"
 			]
 		}
 	},
